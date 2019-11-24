@@ -46,7 +46,7 @@ Feature: Search google for Citizens Advice and verifying the search functionalit
 
         Scenario: Wrong search on Citizens Advice
         And choose where that live in UK
-        Given The list of items on main navigation
+        Given the list of items on main navigation
             | nav            |
             | Benefits       |
             | Work           |
@@ -60,4 +60,4 @@ Feature: Search google for Citizens Advice and verifying the search functionalit
             | More from us   |
         Then I must ensure that it's all there
         When I search for "Lorem Ipsum" in How can we help? search bar
-        Then a no results found message should appear
+        Then a no results for "Lorem Ipsum" message should appear
